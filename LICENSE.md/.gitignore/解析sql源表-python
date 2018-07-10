@@ -1,0 +1,5 @@
+import re
+regexp=r'((?i)(from)|(join))\s+(([a-zA-Z0-9\_]+)\.\s*([a-zA-Z0-9\_]+))'
+rsl=findall(regexp,str)
+for m in rsl:
+   print  m #m[3] 库表名,m[4]库名,m[5]表名
